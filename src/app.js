@@ -14,6 +14,7 @@ app.use(helmet());
 app.use(morgan(morganOption));
 
 
+// eslint-disable-next-line no-unused-vars
 app.use(function errorHandler(error, req, res, next) {
   let response;
   if (NODE_ENV === 'production') {
